@@ -56,29 +56,30 @@ const About: React.FC = () => {
 
 
             
-            <motion.div
-              ref={ref}
-              initial={{ opacity: 0, scale: 0.8 }}
-              animate={inView ? { opacity: 1, scale: 1 } : {}}
-              transition={{ duration: 0.5, delay: 0.2 }}
-              className="absolute -bottom-8 -right-8 bg-white dark:bg-primary-800 p-6 rounded-2xl shadow-lg"
-            >
-              <div className="grid grid-cols-2 gap-4">
-                {stats.map((stat, index) => (
-                  <div key={index} className="text-center">
-                    <div className="flex justify-center mb-2">
-                      {stat.icon}
-                    </div>
-                    <div className="font-bold text-2xl text-primary-900 dark:text-white">
-                      {stat.value}
-                    </div>
-                    <div className="text-sm text-primary-600 dark:text-primary-400">
-                      {stat.label}
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </motion.div>
+      <motion.div
+  ref={ref}
+  initial={{ opacity: 0, scale: 0.8 }}
+  animate={inView ? { opacity: 1, scale: 1 } : {}}
+  transition={{ duration: 0.5, delay: 0.2 }}
+  className="absolute -bottom-8 -right-8 bg-white dark:bg-primary-800 p-4 sm:p-6 rounded-xl sm:rounded-2xl shadow-lg w-64 sm:w-auto"
+>
+  <div className="grid grid-cols-2 gap-3 sm:gap-4">
+    {stats.map((stat, index) => (
+      <div key={index} className="text-center">
+        <div className="flex justify-center mb-1 sm:mb-2">
+          {stat.icon}
+        </div>
+        <div className="font-bold text-lg sm:text-2xl text-primary-900 dark:text-white">
+          {stat.value}
+        </div>
+        <div className="text-xs sm:text-sm text-primary-600 dark:text-primary-400">
+          {stat.label}
+        </div>
+      </div>
+    ))}
+  </div>
+</motion.div>
+
           </div>
         </div>
         
