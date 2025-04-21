@@ -15,12 +15,12 @@ const Contact: React.FC = () => {
     {
       icon: <Mail className="w-6 h-6 text-accent-500" />,
       title: 'Email',
-      content: 'contact@example.com',
+      content: 'kazishahnajs@gmail.com',
     },
     {
       icon: <Phone className="w-6 h-6 text-accent-500" />,
       title: 'Phone',
-      content: '+880 123 456 7890',
+      content: '+880 1831551816',
     },
     {
       icon: <Clock className="w-6 h-6 text-accent-500" />,

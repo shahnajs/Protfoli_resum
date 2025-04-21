@@ -49,10 +49,16 @@ const Header: React.FC = () => {
               <ArrowRight className="ml-2 w-5 h-5" />
             </a>
             
-            <a href="#contact" className="btn-secondary inline-flex items-center">
-              Download Resume
-              <Download className="ml-2 w-5 h-5" />
-            </a>
+                      <a 
+            href="/resum/CV_mst.ShahnajAkter.pdf" 
+            download 
+            className="btn-secondary inline-flex items-center"
+          >
+            Download Resume
+            <Download className="ml-2 w-5 h-5" />
+          </a>
+
+
           </motion.div>
         </div>
       </div>
